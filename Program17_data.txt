@@ -1,0 +1,4 @@
+onForSeconds,largeMotor_Left,20,4
+onForSeconds,largeMotor_Right,40,3
+delayForSeconds,None,0,2
+onForSeconds,mediumMotor,10,8

@@ -1,0 +1,4 @@
+<steps>
+    <step action='delayForSeconds' motor="None" speed="0" seconds="2" />
+    <step action='onForSeconds' motor="mediumMotor" speed="10" seconds="8" />
+</steps>  
