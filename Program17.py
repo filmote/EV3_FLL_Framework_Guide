@@ -84,12 +84,12 @@ def createAction(name, motor, speed, seconds):
 def launchStep(stop, action):
 
     if action.name == 'onForSeconds':
-        thread = threading.Thread(target = onForSeconds, args = (stop, action.motor, action.speed, action.seconds))
+        thread = threading.Thread(target=onForSeconds, args=(stop, action.motor, action.speed, action.seconds))
         thread.start()
         return thread
     
     if action.name == 'delayForSeconds':
-        thread = threading.Thread(target = delayForSeconds, args = (stop, action.seconds))
+        thread = threading.Thread(target=delayForSeconds, args=(stop, action.seconds))
         thread.start()
         return thread
 

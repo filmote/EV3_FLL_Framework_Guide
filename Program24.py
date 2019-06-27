@@ -83,12 +83,12 @@ def launchStep(stop, action):
         if (motor == "mediumMotor"):
             motorToUse = mediumMotor
 
-        thread = threading.Thread(target = onForSeconds, args = (stop, motorToUse, speed, seconds))
+        thread = threading.Thread(target=onForSeconds, args=(stop, motorToUse, speed, seconds))
         thread.start()
         return thread
     
     if name == 'delayForSeconds':
-        thread = threading.Thread(target = delayForSeconds, args = (stop, seconds))
+        thread = threading.Thread(target=delayForSeconds, args=(stop, seconds))
         thread.start()
         return thread
 

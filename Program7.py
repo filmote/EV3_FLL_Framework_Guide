@@ -46,8 +46,8 @@ def main():
     
     # create a threadPool array to 'collect' the threads ..
     threadPool = []
-    thread1 = threading.Thread(target = onForSeconds, args = (largeMotor_Left, 30, 4))
-    thread2 = threading.Thread(target = onForSeconds, args = (largeMotor_Right, 40, 3))
+    thread1 = threading.Thread(target=onForSeconds, args=(largeMotor_Left, 30, 4))
+    thread2 = threading.Thread(target=onForSeconds, args=(largeMotor_Right, 40, 3))
     threadPool.append(thread1)
     threadPool.append(thread2)
 
@@ -63,7 +63,7 @@ def main():
     
     # All threads are complete, so we can run the next step ..
     threadPool = []
-    thread3 = threading.Thread(target = onForSeconds, args = (mediumMotor, 10, 6))
+    thread3 = threading.Thread(target=onForSeconds, args=(mediumMotor, 10, 6))
     threadPool.append(thread3)
 
     # start the thread

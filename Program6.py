@@ -44,13 +44,13 @@ def main():
     mediumMotor = MediumMotor()
     
     # run these in parallel
-    onForSeconds(motor = largeMotor_Left, speed = 50, seconds=2)
-    onForSeconds(motor = largeMotor_Right, speed = 40, seconds=3)
+    onForSeconds(motor=largeMotor_Left, speed=50, seconds=2)
+    onForSeconds(motor=largeMotor_Right, speed=40, seconds=3)
 
     largeMotor_Left.wait_until_not_moving()
     largeMotor_Right.wait_until_not_moving()
 
     # run this after the previous have completed
-    onForSeconds(motor = mediumMotor, speed = 10, seconds=6)
+    onForSeconds(motor=mediumMotor, speed=10, seconds=6)
 
 main()

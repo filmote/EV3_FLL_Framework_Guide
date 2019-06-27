@@ -81,7 +81,7 @@ def main():
     
             for subAction in action:
                 if subAction.get('name') == 'onForSeconds':
-                    thread = threading.Thread(target = onForSeconds, args = (subAction.get('motor'), subAction.get('speed'), subAction.get('seconds'))
+                    thread = threading.Thread(target=onForSeconds, args=(subAction.get('motor'), subAction.get('speed'), subAction.get('seconds'))
                     threadPool.append(thread)
                     thread.start()
     
@@ -89,7 +89,7 @@ def main():
         else:
     
             if action.get('name') == 'onForSeconds':
-                thread = threading.Thread(target = onForSeconds, args = (action.get('motor'), action.get('speed'), action.get('seconds'))
+                thread = threading.Thread(target=onForSeconds, args=(action.get('motor'), action.get('speed'), action.get('seconds'))
                 threadPool.append(thread)
                 thread.start()
 
