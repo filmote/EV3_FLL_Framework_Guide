@@ -1,5 +1,5 @@
 {
     "files.eol": "\n",
-    "ev3devBrowser.download.exclude": "{**/.*,LICENSE,README.md}",
+    "ev3devBrowser.download.exclude": "{**/.*,LICENSE,README.md,**/*.docx,**/*.pdf}",
     "terminal.integrated.shell.windows": "cmd.exe"
 }
