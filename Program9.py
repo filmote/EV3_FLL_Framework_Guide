@@ -66,6 +66,6 @@ def main():
  
     for action in actions:
         if action.get('name') == 'onForSeconds':
-            onForSeconds(action.get('motor'), action.get('speed'), action.get('seconds')
+            onForSeconds(action.get('motor'), action.get('speed'), action.get('seconds'))
 
 main()
